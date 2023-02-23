@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>განთიადის საჯარო სკოლა</title>
+  </head>
+  <body onload=" aside(); footer(); form();">
+      <header id="head">
+        <nav>
+          <a href="index.html"><img alt="logo" src="img/logo.png"></a>
+          <ul>
+            <a id="ahome" href="index.html"><img id="iconhome" src="img/home.svg"> <li id="titlehome">მთავარი</li></a>
+            <a id="aabout" href="about.html"><img id="iconabout" src="img/person.svg"> <li id="titleabout">ჩვენს შესახებ</li></a>
+            <a id="agallery" href="gallery.html"><img id="icongallery" src="img/gallery.svg"> <li id="titlegallery">გალერია</li></a>
+            <a id="anews" href="news.html" ><img id="iconnews" src="img/feed.svg"> <li id="titlenews">სიახლეები</li></a>
+            <a id="acontact" href="contact.html"><img id="iconcontact" src="img/contacts.svg"> <li id="titlecontact">კონტაქტი</li></a>
+          </ul>
+          <a href="javascript:void(0);" class="nav_btn" onclick="myFunction();">
+            <samp></samp>
+            
+            <samp></samp>
+            <samp></samp>
+          </a>
+        </nav>
+         <div class="headcontact">
+          <samp>
+            <span><img src="img/loc.svg"></span>
+            <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+            </samp><samp><span><img src="img/mail.svg"></span>
+            <span><a>Rartmeladze@gmaail.com</a></span>
+           </samp>
+          <samp>
+            <span><img src="img/phone.svg"></span>
+            <span><a>(+995) 595 03-56-68.</a></span>
+          </samp>
+        </div>
+      </header>  
+
+      <div id="headcontact">
+        <samp>
+          <span><img src="img/loc.svg"></span>
+          <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+          </samp><samp><span><img src="img/mail.svg"></span>
+          <span><a>Rartmeladze@gmaail.com</a></span>
+         </samp>
+        <samp>
+          <span><img src="img/phone.svg"></span>
+          <span><a>(+995) 595 03-56-68.</a></span>
+        </samp>
+      </div>
+
+          <div id="left">
+    <form>
+    <section class="head_section">
+      <samp class="left">
+        <img src="img/img (30).jpg">
+      </samp>
+      <samp  class="rigth">
+        
+          <div class="cont1_img">          
+            <img id="contact_head_baner" src="img/contact-banner.png">
+              <h2 id="cont_head_btn">შეგიძლიათ გვეწვით</h2>
+          </div>
+          <!-- <div class="cont1" > -->
+
+
+        <div class="cont2" id="cont_head_animated_baner"> </div>
+      </samp>
+    </section>
+      <section id="form">
+          <samp><h3>დაგვიკავშირდით</h3></samp>
+              <samp>
+                <img  id="icon8" src="/img/person.svg">
+
+                <label class="label" id="label" >თქვენი სახელი</label>
+                <input class="text" type="text" id="input">
+              </samp>
+                  <samp>
+                    <img id="icon9" src="/img/mai.svg">
+
+                    <label class="label" id="label1">თქვენი მეილი</label>
+                    <input class="text" type="email"  id="input1">
+                  </samp>
+                      <samp>
+                        <img id="icon10" src="/img/call.svg">
+                        <label class="label" id="label2" >ტელეფონის ნომერი</label>
+                        <input class="text" type="tel"  id="input2">
+                      </samp>
+      </section>
+          <section id="form_rigth">
+            <samp class="box">
+            <h3>მოგესალმებათ ადმინისტრაცია</h3> 
+            <p>შეგიძლიათ დააფიქსიროთ თქვენი მოსაზრება ნებისმიერ საკითხთან დაკავშირებით თქვენი აზრი ჩვენთვის მნიშვნელოვანა.</p>
+            <span>
+              <h5>გამოიწერე რათა არ გამოგრჩეს სიახლე. <b style="color: rgb(131, 10, 10); font-size: 15px; ">შეიყვანე მეილი^</b></h5>
+              <input type="email" >
+              <button id="gamowera">გამოწერა</button>
+            </span>
+            </samp>
+          </section>
+              <section id="form_footer">
+                <label class="texearea_label" id="label3" >გთხოვთ შეიყვანოთ თქვენი მოსაზრება ....</label>
+                <textarea class="texearea" id="input3"> </textarea>
+              <button type="submit" id="sentbtn">გაგზავნა</button>
+              </section>
+                  <section class="contact_line">
+                    <ul>
+                    <li>Rartmeladze@gmail.com</li>
+                    <li>(+995) 595 03-56-68</li>
+                    <li>ქვემო - ქართლი, წალკა, სოფ.ტბეთი</li>
+                  </ul>
+                  </section>
+                      <section class="baner2">
+                      <samp >
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4856.635519982299!2d43.966176973315754!3d41.592681249090944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4043a10ca711ed49%3A0x5273d79c0edadfd4!2sGantiadi%20Public%20School!5e1!3m2!1ska!2sge!4v1677141079179!5m2!1ska!2sge" 
+                      width="100%" 
+                      height="100%" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                      </samp>
+                      </section>
+
+    </form>
+          </div>
+
+              <aside>
+              <h2>შემოთავაზებული</h2>
+              <ul id="list_shemotavazebuli">
+            </ul>
+              <h2>ახალი განცხადება</h2>
+              <ul id="list_newpost"></ul>
+              <h2>კატეგორიები</h2><ul id="list_kategoria"></ul>
+              </aside>
+
+                  <footer>
+                  <ul id="footer_meniu"> <h2>მენიუ</h2></ul>
+                  <ul id="footer_contact"> <h2>კონტაქტი</h2></ul>
+                  <ul id="footer_admin"> <h2>ადმინი</h2></ul>
+                  </footer>
+
+
+                    
+              
+              
+  </body>
+</html>

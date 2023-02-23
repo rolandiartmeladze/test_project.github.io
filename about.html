@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>განთიადის საჯარო სკოლა</title>
+    <style>
+        .about article{
+        display: flex;
+        width: 80%;
+        }
+        .about article .imgdiv{
+        width: 45%;
+        }
+    section{
+    display: flex;
+    width: 100%;
+    float: left;
+    /* background: none !important; */
+    /* background: -webkit-linear-gradient(top, rgb(68, 150, 50), rgb(94, 166, 78), rgba(155, 246, 18, 0.2),rgb(171, 222, 93),rgb(74, 194, 124)); */
+    z-index: -1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    }
+    article{
+    transition: transform 2.5s;
+    }
+    article p{
+        /* background-color: aquamarine; */
+        opacity: 0.6;
+        padding: 10px;
+        /* border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px; */
+        margin-left: 0px;
+        font-weight: bolder;
+    }
+
+    article:hover p{
+        border-radius: 0px;
+        background-color: rgb(55, 167, 129);
+
+    }
+
+
+    article:hover{
+    transform: scale(1.3);
+    border: none;
+    }
+    article:hover img{
+    border:solid 1px rgb(6, 143, 97);
+    border-radius: 0px;
+    }
+    article:hover .imgdiv{
+    padding: 0px ;
+
+    }
+        .conteiner{
+    width: 100%;
+    }
+
+    article:hover .conteiner {
+    background-color: rgb(6, 143, 97);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    }
+  #chveni_skolis_shesaxeb article{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+  }
+  #gamorcheuli_maswavleblebi article{
+    display: flex;
+    width: 80%;
+    flex-direction: row-reverse;
+  }
+  #warmatebuli_moswavleebi article{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+  }
+  #chveni_migewvwbi article{
+    display: flex;
+    width: 80%;
+    flex-direction: row-reverse;
+  }
+  @media screen and (max-width: 740px) {
+    #left article{
+        display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+article .imgdiv{
+    width: 90% !important;
+}
+}
+      </style>
+  
+  </head>
+
+  <body onload=" aside(); footer(); about();">
+      <header id="head">
+        <nav>
+          <a href="index.html"><img alt="logo" src="img/logo.png"></a>
+          <ul>
+            <a id="ahome" href="index.html"><img id="iconhome" src="img/home.svg"> <li id="titlehome">მთავარი</li></a>
+            <a id="aabout" href="about.html"><img id="iconabout" src="img/person.svg"> <li id="titleabout">ჩვენს შესახებ</li></a>
+            <a id="agallery" href="gallery.html"><img id="icongallery" src="img/gallery.svg"> <li id="titlegallery">გალერია</li></a>
+            <a id="anews" href="news.html" ><img id="iconnews" src="img/feed.svg"> <li id="titlenews">სიახლეები</li></a>
+            <a id="acontact" href="contact.html"><img id="iconcontact" src="img/contacts.svg"> <li id="titlecontact">კონტაქტი</li></a>
+          </ul>
+          <a href="javascript:void(0);" class="nav_btn" onclick="myFunction();">
+            <samp></samp>
+            
+            <samp></samp>
+            <samp></samp>
+          </a>
+        </nav>
+        
+
+         <div class="headcontact">
+          <samp>
+            <span><img src="img/loc.svg"></span>
+            <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+            </samp><samp><span><img src="img/mail.svg"></span>
+            <span><a>Rartmeladze@gmaail.com</a></span>
+           </samp>
+          <samp>
+            <span><img src="img/phone.svg"></span>
+            <span><a>(+995) 595 03-56-68.</a></span>
+          </samp>
+        </div>
+
+      
+
+      </header>  
+      <div id="headcontact">
+        <samp>
+          <span><img src="img/loc.svg"></span>
+          <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+          </samp><samp><span><img src="img/mail.svg"></span>
+          <span><a>Rartmeladze@gmaail.com</a></span>
+         </samp>
+        <samp>
+          <span><img src="img/phone.svg"></span>
+          <span><a>(+995) 595 03-56-68.</a></span>
+        </samp>
+      </div>
+
+          <div id="left">
+            <section class="about" id="chveni_skolis_shesaxeb"></section>
+            <section class="about" id="gamorcheuli_maswavleblebi"></section>
+            <section class="about" id="warmatebuli_moswavleebi"></section>
+            <section class="about" id="chveni_migewvwbi"></section>
+        </div>
+
+              <aside>
+              <h2>შემოთავაზებული</h2><ul id="list_shemotavazebuli"></ul>
+              <h2>ახალი განცხადება</h2><ul id="list_newpost"></ul>
+              <h2>კატეგორიები</h2><ul id="list_kategoria"></ul>
+              </aside>
+
+                  <footer>
+                    <ul id="footer_meniu"> <h2>მენიუ</h2></ul>
+                    <ul id="footer_contact"> <h2>კონტაქტი</h2></ul>
+                  <ul id="footer_admin"> <h2>ადმინი</h2></ul>
+                  </footer>
+
+  </body>
+</html>

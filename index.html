@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>განთიადის საჯარო სკოლა</title>
+    <style>
+        article{
+        transition: transform 2.5s;
+
+        }
+        article:hover{
+        transform: scale(1.3);
+        border: none;
+        }
+        article:hover img{
+        border:solid 1px rgb(6, 143, 97);
+        }
+        article:hover .imgdiv{
+        padding: 0px ;
+
+        }
+        .conteiner{
+        width: 100%;
+        }
+
+        article:hover .conteiner {
+        background-color: rgb(6, 143, 97);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        }
+        #section_chvensshesaxeb #divabout{
+        width: 100%;
+        }
+        article:hover #divabout {
+        background-color: rgb(6, 143, 97);
+        border-bottom-left-radius: -50px;
+        height: 250px;
+        }
+        article:hover .imgdiv {
+        height: 250px;
+        }
+        article:hover img {
+        border-top-right-radius: 0px;
+        }
+
+
+
+
+@media screen and (max-width: 580px) {
+    
+}
+    </style>
+  </head>
+
+  <body onload=" aside(); footer(); mtavari()">
+      <header id="head">
+        <nav>
+          <a href="index.html"><img alt="logo" src="img/logo.png"></a>
+          <ul>
+            <a id="ahome" href="index.html"><img id="iconhome" src="img/home.svg"> <li id="titlehome">მთავარი</li></a>
+            <a id="aabout" href="about.html"><img id="iconabout" src="img/person.svg"> <li id="titleabout">ჩვენს შესახებ</li></a>
+            <a id="agallery" href="gallery.html"><img id="icongallery" src="img/gallery.svg"> <li id="titlegallery">გალერია</li></a>
+            <a id="anews" href="news.html" ><img id="iconnews" src="img/feed.svg"> <li id="titlenews">სიახლეები</li></a>
+            <a id="acontact" href="contact.html"><img id="iconcontact" src="img/contacts.svg"> <li id="titlecontact">კონტაქტი</li></a>
+          </ul>
+          <a href="javascript:void(0);" class="nav_btn" onclick="myFunction();">
+            <samp></samp>
+            
+            <samp></samp>
+            <samp></samp>
+          </a>
+        </nav>
+        
+
+         <div class="headcontact">
+          <samp>
+            <span><img src="img/loc.svg"></span>
+            <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+            </samp><samp><span><img src="img/mail.svg"></span>
+            <span><a>Rartmeladze@gmaail.com</a></span>
+           </samp>
+          <samp>
+            <span><img src="img/phone.svg"></span>
+            <span><a>(+995) 595 03-56-68.</a></span>
+          </samp>
+        </div>
+
+      
+
+      </header>  
+
+      <div id="headcontact">
+        <samp>
+          <span><img src="img/loc.svg"></span>
+          <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
+          </samp><samp><span><img src="img/mail.svg"></span>
+          <span><a>Rartmeladze@gmaail.com</a></span>
+         </samp>
+        <samp>
+          <span><img src="img/phone.svg"></span>
+          <span><a>(+995) 595 03-56-68.</a></span>
+        </samp>
+      </div>
+
+          <div id="left">
+          <section id="section_chvensshesaxeb"> </section>
+
+          <section id="section_newpost"> </section>
+          <section id="section_shemotavazebuli"> </section>
+          <section id="section_gundi"> </section>
+          </div>
+
+              <aside>
+              <h2>შემოთავაზებული</h2>
+              <ul id="list_shemotavazebuli">
+            </ul>
+              <h2>ახალი განცხადება</h2>
+              <ul id="list_newpost"></ul>
+              <h2>კატეგორიები</h2><ul id="list_kategoria"></ul>
+              </aside>
+
+                  <footer>
+                  <ul id="footer_meniu"> <h2>მენიუ</h2></ul>
+                  <ul id="footer_contact"> <h2>კონტაქტი</h2></ul>
+                  <ul id="footer_admin"> <h2>ადმინი</h2></ul>
+                  </footer>
+
+
+  </body>
+</html>
