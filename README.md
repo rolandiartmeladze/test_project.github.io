@@ -1,2 +1,2 @@
-# test_project.github.io
-education organization web page
+# gantiagischool.github.io
+test project school web page 

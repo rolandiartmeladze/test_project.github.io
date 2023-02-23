@@ -371,7 +371,7 @@
                 /* background: -webkit-linear-gradient(top, rgb(68, 150, 50),rgb(68, 150, 50),rgb(68, 150, 50),rgb(43, 143, 85),rgb(43, 143, 85)); */
                 flex-direction: column;
                 align-items: center;    
-                background-image: url(/img/rigth_cover1_.png);
+                background-image: url(img/rigth_cover1_.png);
             }
             aside a{
                 color: white;
