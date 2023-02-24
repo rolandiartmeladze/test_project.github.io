@@ -14,16 +14,11 @@ function form(){
           const label = document.getElementById("label");
                 input.addEventListener("input", () => {
           if (input.value.length > 0) {
-          input.style.backgroundColor = "red";
-          input.style.opacity = 1;
-
           label.style.marginTop = "-55px";
           label.style.transition = "1s ease-in-out";
           label.style.zIndex = 1;
           label.style.fontSize = "15px";
-          label.style.backgroundColor = "rgb(0, 255, 106)";
           label.style.padding = "3px";
-          label.style.borderRadius = "5px";
           } 
           else { 
           input.style.opacity = 1; 
@@ -31,25 +26,18 @@ function form(){
           label.style.zIndex = -1;
           label.style.fontSize = "x-large";
           label.style.padding = "0px";
-          label.style.borderRadius = "0px";
-          input.style.background = "none";
-          label.style.background = "none";
           }
           });
         const input1 = document.getElementById("input1");
         const label1 = document.getElementById("label1");
               input1.addEventListener("input", () => {
       if (input1.value.length > 0) {
-        input1.style.backgroundColor = "red";
-        input1.style.opacity = 1;
 
         label1.style.transition = "1s ease-in-out";
         label1.style.marginTop = "-55px";
         label1.style.zIndex = 1;
         label1.style.fontSize = "15px";
-        label1.style.backgroundColor = "rgb(0, 255, 106)";
         label1.style.padding = "3px";
-        label1.style.borderRadius = "5px";
       } 
       else { 
         input1.style.opacity = 1; 
@@ -57,67 +45,45 @@ function form(){
         label1.style.zIndex = -1;
         label1.style.fontSize = "x-large";
         label1.style.padding = "0px";
-        label1.style.borderRadius = "0px";
-        input1.style.background = "none";
-        label1.style.background = "none";
       }
         });
-      const input2 = document.getElementById("input2");
-      const label2 = document.getElementById("label2");
-            input2.addEventListener("input", () => {
-        if (input2.value.length > 0) {
-          input2.style.backgroundColor = "red";
-          input2.style.opacity = 1;
+    const input2 = document.getElementById("input2");
+    const label2 = document.getElementById("label2");
+          input2.addEventListener("input", () => {
+      if (input2.value.length > 0) {
 
-          label2.style.transition = "1s ease-in-out";
-          label2.style.marginTop = "-55px";
-          label2.style.zIndex = 1;
-          label2.style.fontSize = "15px";
-          label2.style.backgroundColor = "rgb(0, 255, 106)";
-          label2.style.padding = "3px";
-          label2.style.borderRadius = "5px";
-          // label.classList.add = ("label1");
-        } 
-        else { 
-          input2.style.opacity = 1; 
-          label2.style.marginTop = "0";
-          label2.style.zIndex = -1;
-          label2.style.fontSize = "x-large";
-          label2.style.padding = "0px";
-          label2.style.borderRadius = "0px";
-          input2.style.background = "none";
-          label2.style.background = "none";
-          
-
-        }
-      });
+        label2.style.transition = "1s ease-in-out";
+        label2.style.marginTop = "-55px";
+        label2.style.zIndex = 1;
+        label2.style.fontSize = "15px";
+        label2.style.padding = "3px";
+        label2.style.borderRadius = "5px";
+      } 
+      else { 
+        input2.style.opacity = 1; 
+        label2.style.marginTop = "0";
+        label2.style.zIndex = -1;
+        label2.style.fontSize = "x-large";
+        label2.style.padding = "0px";       
+      }
+    });
 const input3 = document.getElementById("input3");
 const label3 = document.getElementById("label3");
       input3.addEventListener("input", () => {
 if (input3.value.length > 0) {
-input3.style.backgroundColor = "red";
-input3.style.opacity = 1;
-
 label3.style.transition = "1s ease-in-out";
 label3.style.animationName = "changeMargin";
-label3.style.marginTop = "-8px";
-label3.style.zIndex = 1;
+label3.style.marginTop = "-12px";
+label3.style.zIndex = 11;
 label3.style.fontSize = "15px";
-label3.style.backgroundColor = "rgb(0, 255, 106)";
 label3.style.padding = "5px";
-label3.style.borderRadius = "3px";
 } 
 else { 
 input3.style.opacity = 1; 
 label3.style.marginTop = "25px";
-
 label3.style.zIndex = -1;
 label3.style.fontSize = "x-large";
 label3.style.padding = "0px";
-label3.style.borderRadius = "0px";
-input3.style.background = "none";
-label3.style.background = "none";
-
 
 }
 });

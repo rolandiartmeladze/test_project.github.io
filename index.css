@@ -469,20 +469,24 @@
             #icon1 {background-color: #500830; border-left-color: #86a013;}
             #icon0 {background-color: #1e0850; border-left-color: #f15cae;}
            #icon-1 {background-color: #5db907; border-left-color: #165008;}
-                   aside a:hover #icon10{border-right:  8px solid  #86a013; border-top: 4px solid #500830; }
-                    aside a:hover #icon9{border-right:  8px solid  #504f08; border-top: 4px solid #10ebd8; }
-                    aside a:hover #icon8{border-right:  8px solid  #165008; border-top: 4px solid #5db907; }
-                    aside a:hover #icon7{border-right:  8px solid  #084850; border-top: 4px solid #500834; }
-                    aside a:hover #icon6{border-right:  8px solid  #1e0850; border-top: 4px solid #f15cae; }
-                    aside a:hover #icon5{border-right:  8px solid  #300850; border-top: 4px solid #12af1f; }
-                    aside a:hover #icon4{border-right:  8px solid  #500834; border-top: 4px solid #084850; }
-                    aside a:hover #icon3{border-right:  8px solid  #5db907; border-top: 4px solid #165008; }
-                    aside a:hover #icon2{border-right:  8px solid  #10ebd8; border-top: 4px solid #504f08; }
-                    aside a:hover #icon1{border-right:  8px solid  #500830; border-top: 4px solid #86a013; }
-                    aside a:hover #icon0{border-right:  8px solid  #1e0850; border-top: 4px solid #f15cae; }
-                   aside a:hover #icon-1{border-right:  8px solid  #5db907; border-top: 4px solid #165008; }
+                    aside a:hover #icon10{ border-top: 4px solid #500830;   border-right:  8px solid  #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon9{ border-top: 4px solid  #10ebd8;   border-right:  8px solid  #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon8{  border-top: 4px solid #5db907;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon7{  border-top: 4px solid #500834;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon6{  border-top: 4px solid #f15cae;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon5{  border-top: 4px solid #12af1f;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon4{  border-top: 4px solid #084850;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon3{  border-top: 4px solid #165008;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon2{  border-top: 4px solid #504f08;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon1{  border-top: 4px solid #86a013;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon0{  border-top: 4px solid #f15cae;  border-right:  8px solid   #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
+                    aside a:hover #icon-1{  border-top: 4px solid #165008;  border-right:  8px solid  #def76e;  box-shadow: #def76e 0px 0px 9px 11px; background-color:  #def76e; }
                 
-                
+
+                aside a:hover {
+                     box-shadow: #d3fd15 2px 2px 3px 1px inset;  
+                     color: yellow;
+                }
                 footer{
 
                     display: inline-flex;
@@ -962,8 +966,11 @@ margin-bottom:  15px;
 text-align: center;
 display:inline;
 padding: 5px;
-border-bottom: solid 5px rgb(122, 18, 5);
+border-bottom: solid 3px rgb(122, 18, 5);
+text-shadow: rgb(253, 252, 252) -3px 0 , yellow 2px 0;
+color: rgb(252, 5, 5);
 }
+
 .text{
 margin: 4px;
 margin-left: 0px;
@@ -982,6 +989,15 @@ border-right: solid 2px rgb(248, 245, 245);
 border-bottom:  solid 2px rgb(248, 245, 245) ;
 border-left: none;
 }
+.text:hover{
+    box-shadow:  red -2px 0px 3px,
+    yellow  2px 11px 16px;
+}
+.texearea:hover{
+    box-shadow:  red -2px 0px 3px,
+    yellow  2px 11px 16px;
+}
+
 #form_rigth{
 display: flex;
 width: 45%;
@@ -1041,8 +1057,9 @@ left: 15%;
 text-align: left;
 font-size: x-large;
 z-index: -1;
-color: white;
+color: rgb(243, 236, 236);
 display: block;   
+background-image: url(img/left_cover1_.png);
 }
 .texearea{
 border-left: solid 6px rgb(143, 1, 1);
@@ -1073,6 +1090,7 @@ z-index: -1;
 color: white;
 display: block;    
 transition: transform 2.5s;
+background-image: url(img/left_cover1_.png);
 }
   
 form #sentbtn {
@@ -1083,28 +1101,30 @@ form #sentbtn {
     margin-top: -40px;
     font-weight:500;
     font-size: x-large;
-    color: black;
     text-align: center;
-    background-color: #165008;
+    background-color: #175326;
+    border: none;
     border-top: none;
     cursor: pointer;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-left: #084850 solid 8px;
-    border-bottom: #cdec1d solid 6px;
-    border-right: #534b04 solid 8px;
-    border-top:  solid 6px rgb(36, 129, 78) ;
-
-
+    color: rgb(207, 34, 4);
+    box-shadow: yellow  9px 9px 6px;
+transition: ransform 200ms, box-shadow 200ms;
+border-radius: 8px;
 }
 
 form #sentbtn:hover {
-border-left: #084850 solid 6px;
-border-bottom: #cdec1d solid 4px;
-border-right: #045315 solid 10px;
-border-top:  solid 3px rgb(150, 37, 23) ;
-
+transform: translateY(2px) translateX(2px);
+box-shadow: yellow 2px 11px 9px;
+color:yellow;
+background-color: #10ebd8;
 }
+form #sentbtn:active {
+    transform: translateY(0px) translateX(0px);
+    box-shadow: yellow 1px 3px 1px;
+    color:yellow;
+    
+}
+
 .contact_line {
 width: 50%;
 z-index: 1;
@@ -1156,17 +1176,19 @@ form ul {
     align-items: stretch;
 }
 form ul li:hover {
-    border-left: solid 5px coral;
-    border-top: solid 5px rgb(7, 7, 7);
-    color:white;
-
-
+/* text-shadow:yellow -2px 0; */
+        box-shadow: yellow 0px 11px 22px;
+        color: rgb(255, 8, 0);
+        border-radius: 5px;
+        background-color: rgb(20, 182, 55);
 }
     form ul li {
-        padding: 11px;
+    transition: ransform 0.5s, box-shadow 0.3s;
+    border-radius: 15px;
+    padding: 11px;
     margin: 11px;
-    border-left: solid 3px coral;
-    border-top: solid 2px rgb(7, 7, 7);
+    color:  rgb(252, 250, 250) ;
+    box-shadow: rgb(93, 245, 199) 0px 6px 20px;
     cursor: pointer;
 }
 
