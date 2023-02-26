@@ -1,159 +1,210 @@
-
 <!DOCTYPE html>
-<html lang="ka">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
-    <title>განთიადის საჯარო სკოლა</title>
-    <style>
-      
-      
-      
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test_project</title>
+  <style>
+    body{ackground-color: rgb(236, 238, 234); }
+/* ელემენტი რომელშიც უნდა აინთოს html ტეგი h1   */
+.test01{
+      width: 50%;
+      display: inline;
+      float: left;
+    }
+    .test02{
+      display: inline;
+      float:right;
+      /* background-color: blue; */
+      width: 50%;
+    }
+/* ელემენტი რომელშიც უნდა აინთოს ტექსტი  */
+    h1 {
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+    }
+    .h11 {
+      text-align:center;
+    }
 
-          
-    
 
 
-body{
-  background-position: 0 0;
-  background-position-x: left;
-  padding: 0px;
-  margin: 0px;
-  background-image: url(img/head.png);
-  background-size:cover;
-
-  background-repeat: no-repeat;
-  padding: 10px;
-    transition: background-position-x 0.7s;
 
 
-}     
 
 
-  body:hover {
-    animation: hoverAnimation 5s;
+
+div {
+      background-color: rgb(107, 47, 47);
+      width: 100%;
+      height: 500px;
+    }
+
+  button{
+          margin: 150px;
+          background: none;
+          padding:0px;
+          border-radius: 5px;
+          transform: skew(11deg , 5deg);
+          border:none;
+        }
+
+    a {
+        border-color: darkcyan;
+        border-bottom: solid 5px;
+        border-left: solid 6px;
+        border-top: solid 2px;
+        border-right: solid 3px;
+        text-decoration: none;
+        display: block;
+        background-color: rgb(15, 83, 26);
+        width: 250px;
+        height: 80px;
+        color: rgb(8, 0, 0);
+        text-shadow: rgb(248, 245, 245) 1px 3px 2px ;
+        box-shadow: rgb(0, 128, 6) 11px 8px 12px;
+        padding: 8px;
+        font-weight: bolder;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+      }
+
+a:hover {
+          box-shadow: rgb(169, 180, 9) 11px 8px 12px;
+          text-shadow: red 2px 3px 2px ;
+          background-color: rgb(5, 5, 5);
+          color: rgb(208, 253, 5);
+        }
+a:active {
+          border-bottom: solid 1px;
+          border-left: solid 1px;
+          border-top: solid 1px;
+          border-right: solid 1px;
+          color: rgb(7, 138, 18);
+          background-color: rgb(6, 78, 126);
+          text-shadow:none ;
+          box-shadow: rgb(66, 236, 222) 11px 8px 12px;
+        }
+  </style>
+</head>
+<body>
+<div class="box">
+   <button>
+    <a href="#">გაგზავნა</a>
+  </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ტესტ_01 -->
+  <!-- <div class="test01" id="class">
+  </div>  -->
+
+  <!-- ტესტ_02 -->
+  <!-- <div class="test02" id="test02">
+  </div>  -->
+  <!-- ტესტ_01 -->
+   <script>
+  // ელემენტი სადაც აინტება ტექსტი
+  var box = document.getElementById("class");
+
+  var simbol = "";
+  // ელემენტის ტექსტის ფერის ვარიანტები
+    var feri = ["red", "blue", "green", "purple", "orange"];
+  // ელემენტისა და ტექსტის გენერირება განმეორებით
+      for (i = 1; i < 8; i++) {
+  // ტექსტის ანთების დაყოვნება ყოველ ჯერზე
+        setTimeout(function () {
+          simbol += ":^:.";
+            var h1 = document.createElement("h1");
+              h1.innerText = simbol;
+              h1.style.color = feri[Math.floor(Math.random() * feri.length)];
+              box.append(h1);
+        }, i * 100);
+      }
+  </script>
+
+  <!-- ტესტ_02 -->
+  <script>
+const colors = ["red", "blue", "green", "purple", "orange"];
+const test02 = document.getElementById("test02");
+
+function createH1Element() {
+  let text = "";
+  for (let j = 1; j <= i; j++) {
+    text += "~.~";
   }
 
-  @keyframes hoverAnimation {
-    0% {
+  const h1 = document.createElement("h1");
+  h1.classList = "h11";
+  test02.appendChild(h1);
+
+  insertTextWithDelay(h1, text);
+
+  if (i < 7) {
+    i++;
+    // Wait for 200ms before creating the next H1 element
+    setTimeout(createH1Element, 200);
+  }
+}
+
+function insertTextWithDelay(element, text) {
+  const characters = text.split("");
+  const length = characters.length;
+  const delay = 100; // 100ms delay between each character
+  let index = 0;
+  let lastTime = 0;
+
+  function animateColor(timestamp) {
+    if (timestamp - lastTime >= 100) {
+      element.style.color = colors[Math.floor(Math.random() * colors.length)];
+      lastTime = timestamp;
     }
-    100% {
-      background-position-y: 50%;
+
+    if (index < length) {
+      element.innerText += characters[index++];
+      requestAnimationFrame(animateColor);
     }
   }
 
-
-
-#hover{
-  color:wheat;
+  requestAnimationFrame(animateColor);
 }
 
-
-
-aside{
-  width: 20%;
-}
-#left{
-  width: 80%;
-  background-image: url(img/head.png);
-  background-size:100%;
-  background-position-x: right;
-  background-repeat: no-repeat;
-}
-          </style>
-<script>
-</script>
-  </head>
-
-  <body id="myBody"  onload=" aside(); footer(); hiver();">
-    
-    <header id="head">
-      <nav>
-        <a href="index.html"><img alt="logo" src="img/logo.png"></a>
-        <ul>
-          <a href="index.html"> <li>მთავარი</li></a>
-          <a href="index.html"><li>ჩვენს შესახებ</li></a>
-          <a href="gallery.html"><li>გალერია</li></a>
-          <a href="index.html"><li>სიახლეები</li></a>
-          <a href="index.html"><li>კონტაქტი</li></a>
-        </ul>
-        <a href="javascript:void(0);" class="nav_btn" onclick="myFunction();">
-          <samp></samp>
-          
-          <samp></samp>
-          <samp></samp>
-        </a>
-      </nav>
-      
-
-       <div class="headcontact">
-        <samp>
-          <span><img src="img/loc.svg"></span>
-          <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
-          </samp><samp><span><img src="img/mail.svg"></span>
-          <span><a>Rartmeladze@gmaail.com</a></span>
-         </samp>
-        <samp>
-          <span><img src="img/phone.svg"></span>
-          <span><a>(+995) 595 03-56-68.</a></span>
-        </samp>
-      </div>
-
-    
-
-    </header>  
-    <div id="headcontact">
-      <samp>
-        <span><img src="img/loc.svg"></span>
-        <span><a>ქვემო - ქართლი, წალკა, ს.ტბეთი.</a></span>
-        </samp><samp><span><img src="img/mail.svg"></span>
-        <span><a>Rartmeladze@gmaail.com</a></span>
-       </samp>
-      <samp>
-        <span><img src="img/phone.svg"></span>
-        <span><a>(+995) 595 03-56-68.</a></span>
-      </samp>
-    </div>
-
-    <div id="left">
-      
-      <section id="section_chvensshesaxeb"> </section>
-
-      <section id="section_newpost"> </section>
-      <section id="section_shemotavazebuli"> </section>
-      <section id="section_gundi"> </section>
-      </div>
-
-      <aside>
-        <h2>შემოთავაზებული</h2><ul id="list_shemotavazebuli"></ul>
-        <h2>ახალი განცხადება</h2><ul id="list_newpost"></ul>
-        <h2>კატეგორიები</h2><ul id="list_kategoria"></ul>
-        </aside>
-
-            <footer>
-            <ul id="footer_meniu"> <h2>კონტაქტი</h2></ul>
-            <ul id="footer_contact"> <h2>კონტაქტი</h2></ul>
-            <ul id="footer_admin"> <h2>ადმინი</h2></ul>
-            </footer>
-
-
-    <!-- <nav>
-    <ul>
-    <li id="hover"> მთავარი</li>
-    <li id="hover"> მთავარი</li>
-    <li id="hover"> მთავარი</li>
-    <li id="hover"> მთავარი</li>
-    <li id="hover"> მთავარი</li>
-    </ul>
-    </nav> -->
-    
-         
+let i = 1;
+createH1Element();
 
   
-    
-  
+
+
+
+  </script>
 </body>
-</html> 
-
+</html>
